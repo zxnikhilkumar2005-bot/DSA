@@ -129,13 +129,16 @@ let prompt = require("prompt-sync")()
 //     console.log();
 // }
 
-let r = Number(prompt("Enter a nuumber of rooe:"))
-// let c = Number(prompt("Enter a nuumber of colem:"))
+// let r = Number(prompt("Enter a nuumber of rooe:"))
+// // let c = Number(prompt("Enter a nuumber of colem:"))
 
-for (let i = 1; i <= r; i++) {
-    for (let j = 1; j <= i; j++) {
-        process.stdout.write("*")
+// for (let i = 1; i <= r; i++) {
+//     for (let j = 1; j <= i; j++) {
+//         process.stdout.write("*")
 
-    }
-    console.log();
-}
+//     }
+//     console.log();
+// }
+
+
+console.log("hello ji");
