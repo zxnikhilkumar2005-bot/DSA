@@ -22,7 +22,7 @@
 // console.log(`Hello ${useName}you are ${age} years olde.`);
 
 
-// let  prompmt =require ("prompt-sync")()
+// //let  prompmt =require ("prompt-sync")()
 // let a = Number(prompmt("Enter a number"))//5
 // let b = Number(prompmt("Enter b number"))//10
 // a = a+ b//23+14 = 37
@@ -34,10 +34,10 @@
 // console.log(a,b);
 
 
-let  prompt = require ("prompt-sync")()
+// let  prompt = require ("prompt-sync")()
 
-let p = prompt ("Enter principle")
-let r = prompt ("Enter reate of interest ")
-let t = prompt ("Enter time")
+// let p = prompt ("Enter principle")
+// let r = prompt ("Enter reate of interest ")
+// let t = prompt ("Enter time")
 
-console.log(p*Math.pow(1+(r/100),t)-p);
+// console.log(p*Math.pow(1+(r/100),t)-p);
