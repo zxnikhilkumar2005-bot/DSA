@@ -77,3 +77,19 @@ const prompt = require("prompt-sync")()
 // console.log("The second minimum element in array is: ", sMin);
 
 
+//All zeroes to lefrt and all one to right 
+let arr = [20,30,40,50,60]
+let temp = new Array(arr.length)
+
+let i = arr.length-1;
+for (let j = 0;j<arr.length;j++){
+    temp[j] =arr[i];
+    i--;
+}
+
+console.log(arr)
+
+console.log(temp);
+;
+
+
