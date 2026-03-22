@@ -78,18 +78,76 @@ const prompt = require("prompt-sync")()
 
 
 //All zeroes to lefrt and all one to right 
-let arr = [20,30,40,50,60]
-let temp = new Array(arr.length)
+// let arr = [20,30,40,50,60]
+// let temp = new Array(arr.length)
 
-let i = arr.length-1;
-for (let j = 0;j<arr.length;j++){
-    temp[j] =arr[i];
-    i--;
+// let i = arr.length-1;
+// for (let j = 0;j<arr.length;j++){
+//     temp[j] =arr[i];
+//     i--;
+// }
+
+// console.log(arr)
+
+// console.log(temp);
+// ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Array rotation by one to right
+
+
+let arr = [1, 2, 3, 4, 5]
+console.log(arr);
+
+let temp = arr[arr.length - 1]
+for (let i = arr.length - 1; i > 0; i--) {
+    arr[i] = arr[i - 1]
+}
+arr[0] = temp
+
+console.log(arr);
+
+//ARRAY LEFT ROTATION BY K ELEMENTS
+
+let Array = [1, 2, 3, 4, 5,]
+let k = 5;
+
+for (let j = 1; j <= k; j++) {
+    let temp = Array[0]
+    for (let i = 1; i<Array.length; i++) {
+        Array[i-1]=Array[i]
+    }
+    Array[Array.length-1] = temp
+}
+console.log(Array);
+
+//print the count of subarrays whose sum is equal
+//to the target.
+let array1=[1,2,3,4,5,7,8]
+let t=12;
+let count=0;
+for (i=0;i<array1.length;i++){
+    let sum =0;
+    for(j=i;j<array1.length;j++){
+        sum+=array1[j]
+        if (sum==t)count++
+    }
 }
 
-console.log(arr)
+console.log(count);
 
-console.log(temp);
-;
 
 
